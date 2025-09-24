@@ -1,4 +1,5 @@
 import { FaUserCircle } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -11,10 +12,12 @@ export default function Header() {
         CatoTech
       </h1>
 
+      <Link href="/login">
       <FaUserCircle
         className="text-white text-3xl cursor-pointer hover:text-orange-500 transition-colors"
         title="Login"
       />
+      </Link>
     </header>
   );
 }
